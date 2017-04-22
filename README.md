@@ -1,24 +1,22 @@
-# README
+# Advancements React
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is a rebuild of [TroopAdvancements](https://github.com/dnguyensr/TroopAdvancements) and [advancements](https://github.com/dnguyensr/advancments) which are a Boy Scouts advancements tracking web applications. This build shifts the purpose of the application to a quick overview of troop advancements scoped to troop, patrols, and individuals from the a full fledged advancements tracker that duplicated traditional tracking methods of the Boy Scout Handbook.
 
-Things you may want to cover:
+## Environment
 
-* Ruby version
+### Ruby/Rails version
 
-* System dependencies
+* Ruby 2.4.0
+* Rails 5.1.0.rc2
 
-* Configuration
+### System dependencies
 
-* Database creation
+This project uses webpacker which requires:
 
-* Database initialization
+* Ruby 2.2+
+* Node.js 6.4.0+
+* Yarn
 
-* How to run the test suite
+### Configuration
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Text Editor: An EditorConfig plug-in is required for most text editors to conform to coding styles defined in the editorconfig file.
