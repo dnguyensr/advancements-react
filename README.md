@@ -17,6 +17,15 @@ This project uses webpacker which requires:
 * Node.js 6.4.0+
 * Yarn
 
+Foreman is required to run the rails server and webpack-dev-server concurrently"
+
+* Foreman
+
 ### Configuration
 
 Text Editor: An EditorConfig plug-in is required for most text editors to conform to coding styles defined in the editorconfig file.
+
+### Development
+
+To run the rails server and webpack-dev-server concurrently:
+Run `foreman start`
