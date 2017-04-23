@@ -1,6 +1,6 @@
 # Advancements React
 
-This project is a rebuild of [TroopAdvancements](https://github.com/dnguyensr/TroopAdvancements) and [advancements](https://github.com/dnguyensr/advancments) which are a Boy Scouts advancements tracking web applications. This build shifts the purpose of the application to a quick overview of troop advancements scoped to troop, patrols, and individuals from the a full fledged advancements tracker that duplicated traditional tracking methods of the Boy Scout Handbook.
+This project is a rebuild of [TroopAdvancements](https://github.com/dnguyensr/TroopAdvancements) and [advancements](https://github.com/dnguyensr/advancements) which are a Boy Scouts advancements tracking web applications. This build shifts the purpose of the application to a quick overview of troop advancements scoped to troop, patrols, and individuals from the a full fledged advancements tracker that duplicated traditional tracking methods of the Boy Scout Handbook.
 
 ## Environment
 
@@ -20,6 +20,10 @@ This project uses webpacker which requires:
 Foreman is required to run the rails server and webpack-dev-server concurrently"
 
 * Foreman
+
+### App dependencies
+
+Devise: The Devise gem is currently being used to handle user authentication. JSON web tokens will be included in a future branch.
 
 ### Configuration
 
