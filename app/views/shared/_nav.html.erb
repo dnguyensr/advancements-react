@@ -1,0 +1,15 @@
+<nav class="container-fluid" id="nav">
+  <div class="row">
+    <ul class="nav nav-tabs" role="tablist">
+      <li><%= link_to "Home", root_path %></li>
+    </ul>
+    <ul class="nav nav-tabs pull-right" role="tablist">
+      <% if user_signed_in? %>
+      <li><%= link_to "Sign out", destroy_user_session_path, method: "delete" %></li>
+      <% else %>
+      <li><%= link_to "Register", new_user_registration_path %></li>
+      <li><%= link_to "Sign In", new_user_session_path %></li>
+      <% end %>
+    </ul>
+  </div>
+</nav>
