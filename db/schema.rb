@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170423015441) do
+ActiveRecord::Schema.define(version: 20170503071015) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,13 @@ ActiveRecord::Schema.define(version: 20170423015441) do
     t.boolean "required", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "merit_badges_users", id: false, force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "merit_badge_id", null: false
+    t.index ["merit_badge_id", "user_id"], name: "index_merit_badges_users_on_merit_badge_id_and_user_id"
+    t.index ["user_id", "merit_badge_id"], name: "index_merit_badges_users_on_user_id_and_merit_badge_id"
   end
 
   create_table "users", force: :cascade do |t|
