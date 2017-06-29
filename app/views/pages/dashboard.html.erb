@@ -1,0 +1,27 @@
+<div class="contaier">
+  <div class="row">
+    <div class="col-12 col-sm-6 offset-sm-3 col-md-4 offset-md-4">
+      <table>
+        <thead>
+          <tr>
+            <th>Merit Badge</th>
+            <th>Required</th>
+            <th># Complete</th>
+            <th>% Complete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @badges.each do |badge| %>
+          <tr>
+            <th><%= badge.name %></th>
+            <th><%= badge.users.count %></th>
+            <th><%= (badge.users.count / @user_count) * 100 %>%</th>
+          </tr>
+          <% end %>
+        </tbody>
+
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
