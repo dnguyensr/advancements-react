@@ -20,6 +20,14 @@ GIT
       sprockets (~> 4.x)
       sprockets-rails (< 4.0)
 
+GIT
+  remote: https://github.com/thoughtbot/shoulda-matchers.git
+  revision: ead87017a6c15adce66a87dce8ee2ece91d0d27c
+  branch: rails-5
+  specs:
+    shoulda-matchers (3.1.2)
+      activesupport (>= 4.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -182,8 +190,6 @@ GEM
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
       websocket (~> 1.0)
-    shoulda-matchers (3.1.1)
-      activesupport (>= 4.0.0)
     simplecov (0.14.1)
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
@@ -249,7 +255,7 @@ DEPENDENCIES
   rspec-rails (~> 3.5)
   sass-rails!
   selenium-webdriver
-  shoulda-matchers (~> 3.1)
+  shoulda-matchers!
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
