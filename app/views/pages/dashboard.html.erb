@@ -1,8 +1,8 @@
-<div class="contaier">
+<div class="container" id="admin">
   <div class="row">
     <div class="col-12 col-sm-6 offset-sm-3 col-md-4 offset-md-4">
-      <table>
-        <thead>
+      <table class="table table-striped">
+        <thead class="thead-default">
           <tr>
             <th>Merit Badge</th>
             <th>Required</th>
@@ -13,9 +13,14 @@
         <tbody>
           <% @badges.each do |badge| %>
           <tr>
-            <th><%= badge.name %></th>
-            <th><%= badge.users.count %></th>
-            <th><%= (badge.users.count / @user_count) * 100 %>%</th>
+            <td><%= badge.name %></td>
+            <% if badge.required %>
+            <td>required</td>
+            <% else %>
+            <td></td>
+            <% end %>
+            <td><%= badge.users.count %></td>
+            <td><%= (badge.users.count / @user_count) * 100 %>%</td>
           </tr>
           <% end %>
         </tbody>
